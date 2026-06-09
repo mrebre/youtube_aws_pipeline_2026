@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Podaci (ne želimo CSV i JSON podatke na Gitu)
+*.csv
+*.json
+data/
+
+# AWS/Environment osjetljivi podaci
+.env
