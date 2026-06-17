@@ -4,9 +4,9 @@ __pycache__/
 .venv/
 
 # Podaci (ne želimo CSV i JSON podatke na Gitu)
-*.csv
+#*.csv
 #*id.json
-data/
+#data/
 
 # AWS/Environment osjetljivi podaci
 .env
