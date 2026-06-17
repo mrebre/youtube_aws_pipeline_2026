@@ -81,6 +81,8 @@ def validate_category_data(df: pd.DataFrame) -> pd.DataFrame:
     # ČIŠĆENJE DUPLIKATA: Proveravamo broj redova pre i posle uklanjanja duplih ID-jeva
     before = len(df)
     if "id" in df.columns:
+        # Osiguravamo da su svi ID-jevi stringovi radi precizne deduplikacije
+        df["id"] = df["id"].astype(str)
         # drop_duplicates briše duple redove po koloni "id", a keep="last" zadržava onaj koji je stigao poslednji
         df = df.drop_duplicates(subset=["id"], keep="last")
     after = len(df)
