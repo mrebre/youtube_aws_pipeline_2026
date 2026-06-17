@@ -5,7 +5,7 @@ __pycache__/
 
 # Podaci (ne želimo CSV i JSON podatke na Gitu)
 *.csv
-*id.json
+#*id.json
 data/
 
 # AWS/Environment osjetljivi podaci
